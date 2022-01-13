@@ -47,24 +47,14 @@ function setup(){
     particle5 =Bodies.circle(230,10,10,particle_options);
     World.add(world,particle5);
 
+    
+    //created all the three rotator bodies
     var rotator_options={
-      // isStatic=true
-      // isStatic true
-      // isStatic:false
-      // isStatic:true
+      isStatic:true
     };
 
-    // rotator1 = rectangle(250,200,150,20,rotator_options);
-    // World.add(world,rotator1);
-
-    // rotator1 = Bodies.rectangle();
-    // World.add(world,rotator1);
-
-    // rotator1 = Bodies.circle(250,200,150,20,rotator_options);
-    // World.add(world,rotator1);
-
-    // rotator1 = Bodies.rectangle(250,200,150,20,rotator_options);
-    // World.add(world,rotator1);
+    rotator1 = Bodies.rectangle(250,200,150,20,rotator_options);
+    World.add(world,rotator1);
 
     rotator2 = Bodies.rectangle(250,200,150,20,rotator_options);
     World.add(world,rotator2);
